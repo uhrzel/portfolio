@@ -9,12 +9,13 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Document</title>
 </head>
+
 <body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<div class="container-fluid">
-<header>
+<div class="header" style="display: flex; background-color: yellow; align-items: center; padding: 10px;">
+        <img src="./assets/brand/bootstrap-social-logo.png" width="200px" height="200px" alt="">
         <nav class="navbar navbar-expand-lg navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,30 +27,78 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-    </header>
-         <div class="information">
-            <div class="img-area">
-            <img src="./assets/img/avatar.jpeg" alt="">
-        </div>
-        <div class="name ">
-           <h2>Arzel John Zolina</h2>
-           <hr>
-           <h4 class="niche">Freelance Developer</h4>
-        </div>
-         </div>
-     
-    </div>
+</div>
+<div class="container-fluid">
+<div class="profile">
+      <img src="./assets/brand/bootstrap-social.png" alt
+                title="<NAME>"
+                    width= "20%" height = 30% >
+<h3>
+    Arzel John Zolina
+</h3>
+
+<hr>
+</div>
+<div class="about" id="about">
+    <h2>About</h2>
+    <p><strong>Biography:</strong> I am a full stack web developer with experience
+        in HTML5, CSS3 and JavaScript. My background is in the hospitality industry where I
+        have worked as an event planner for 6 years.</p>
+        <br />
+        <hr/>
+        <br />
+        <p><strong>Education: </strong>I graduated from Washington State University
+            at St. Louis with a Bachelor of Science degree in Business Administration.
+            After my undergraduate studies, I moved to San Francisco Bay Area to work for
+            one year as a sales associate before moving back home to attend college again.
+            In addition to being a Sales Associate, I also taught English classes at
+            various schools throughout California. During this time, I was able to learn how
+            to teach people about business and technology through speaking engagements.
+            This has allowed me to gain valuable skills that will help me become a better
+            programmer.</p>
+            <br />
+            <hr/>
+            <br />
+            <p><strong>Work Experience:</strong> While attending university, I had the
+                opportunity to be part of several different teams within the organization. One team member
+                handled all aspects of customer service while another took care of inventory management.
+                Another team member assisted customers by answering their questions regarding products or services.
+                The other two roles were more technical but involved working on both front end and backend development.
+                Both roles were very important to me because they helped keep track of customers’ needs
+                and provided them with products or services based on their preferences. These jobs gave me
+                exposure into working with large groups of people and learning new things every day. The other job
+                exposure into working with other individuals and groups within organizations. Throughout these experiences,
+                insight into what it takes to run a successful company. The other job I held during my
+                internship was working as a cashier at a local coffee shop. It was here when I
+                learned more about managing money and keeping records of transactions. Throughout these two
+                positions, I gained knowledge of accounting concepts such as debit/credit cards, taxes
+                and banking systems. Overall, both experiences made me realize just how much work goes behind
+                the scenes every day.</p>
+                <br />
+                <hr/>
+                <br />
+              
+             
+</div>
+<div class="contact" id="contact">
+    <!-- Contact Section -->
+    <h2 id="contact">Contact Me!</h2>
+    <a href="www.facebook.com"></a>
+      
+</div>
+</div>
+
 </body>
 
 </html>

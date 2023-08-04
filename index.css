@@ -1,34 +1,45 @@
-body{
-  background-color: rgba(25, 22, 22, 0.759) !important;
-}
-h1{
-    margin: 0 10% 0 5%;
-}
-.navbar{
-    margin: 0% 5% 0 70%;
-}
 
+
+.navbar{
+    margin: 0% 5% 0 50%;
+}
  .nav-link {
- color: white !important;
+ color: rgb(0, 0, 0) !important;
 }
 .navbar-toggler{
-  background-color: rgb(11, 38, 61) !important;
+  background-color: rgb(42, 182, 217) !important;
+}
+@media (max-width: 768px) {
+  .navbar {
+    margin-left: 20%;
+    margin-right: auto;
+  }
+}
+
+.navbar-nav{
+  list-style: none;
+  display: flex;
+}
+li{
+  margin-right: 10px;
 }
 img{
   background-color: transparent;
+}
+.container-fluid{
+ margin-top: 10px;
+}
+.profile {
+
+}
+.about{
+  margin-top: 10px;
+}
+.contact{
+  margin-top: 20px;
   
-}
-.information{
-  align-items: center; 
-display: flex;
-}
-.name{
- text-align: center; /* Horizontally center the text */
-  margin: 0 10%;
-  margin-bottom: 0;
-}
 
-
+}
 
 
 
