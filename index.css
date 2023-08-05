@@ -48,6 +48,7 @@ li {
   display: flex;
   align-items: center;
 }
+
 .profile-name {
   display: flex;
   flex-direction: column;
@@ -57,7 +58,7 @@ li {
 .name {
   font-size: 40px;
   font-family: 'Kaushan Script', cursive;
-  margin-top: 5px; /* Adjusted the margin-top */
+  margin-top: 5px;
   margin-bottom: 20px;
 }
 
@@ -75,14 +76,21 @@ li {
 }
 
 .about {
-  width: 65%; /* Adjusted the width */
-  margin-left: 30px; /* Added some margin on the left for spacing */
+  width: 70%; /* Set the width to 100% on mobile to create a column layout */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  padding: 20px; /* Added some padding for spacing */
+  padding: 20px;
+  margin-top: 20px; /* Add margin-top on mobile for spacing */
 }
+
+/* Media query for screens with a maximum width of 768px (mobile devices) */
 @media (max-width: 768px) {
   .container-row {
-    padding: 0; /* Remove padding to fit content in full width */
+    flex-direction: column; /* Change to a column layout on mobile */
+    align-items: center; /* Center items vertically on mobile */
+  }
+
+  .profile-name {
+    margin-bottom: 20px; /* Add margin-bottom on mobile for spacing */
   }
 
   .name {
@@ -93,7 +101,11 @@ li {
     width: 150px; /* Decrease image size for mobile */
     height: 150px;
   }
+  .about{
+    width: 100%;
+  }
 }
+
 .container-row-skills{
   padding: 20px;
   display: flex;
@@ -125,44 +137,52 @@ li {
 }
 @media (max-width: 768px) {
   .container-row-skills {
-    justify-content: center; /* Center the boxes horizontally */
-  }
-
-  .Mobile-app,
-  .web-dev,
-  .other {
-    width: 90%; /* Reduce the width to 90% on smaller screens */
-    max-width: none; /* Remove the maximum width on smaller screens */
+    justify-content: space-evenly;
+     flex-direction: column; 
   }
 }
-.container-row-projects{
+.container-row-projects {
   display: flex;
   justify-content: space-evenly;
 }
-.project-description{
 
-    width: 50%;
-    height: 100%;
+.project-description {
+  width: 50%;
+  height: 100%;
   padding: 20px;
   margin-bottom: 20px;
+}
+
+.container-project-image {
+  width: 50%;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center; /* Center the buttons on mobile */
+}
+
+.project-img {
+  width: 100%;
+  height: auto; /* Automatically adjust height to maintain aspect ratio */
+}
+
+button {
+  display: inline-block;
+  margin: 5px;
+}
+
+/* Media query for screens with a maximum width of 768px (mobile devices) */
+@media (max-width: 768px) {
+  .container-row-projects {
+    flex-direction: column; /* Change to a column layout on mobile */
+  }
+
+  .project-description,
+  .container-project-image {
+    width: 100%; /* Make both sections occupy the full width on mobile */
+  }
  
 }
-.projects{
+ .projects{
   font-weight: bold;
-  text-align: center;
-  margin-bottom: 5%;
-}
-.container-row-contact{
-  text-align: center;
-}
-.contact{
-  text-align: center;
-  margin: 5% 0 0 0;
-}
-footer{
-  display: flex;
-text-align: center;
-}
-.contact{
-  font-size: large;
-}
+    text-align: center;
+  }

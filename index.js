@@ -3,3 +3,4 @@
 const concatenatedFruit = fruits.join(" ");
 console.log(concatenatedFruit);
  */
+
