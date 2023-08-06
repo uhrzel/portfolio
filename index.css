@@ -50,10 +50,6 @@ li {
   }
 }
 
-.container-fluid {
-  background-color: rgb(149, 164, 175);
-}
-
 .container-row {
   justify-content: space-between;
   display: flex;
@@ -67,13 +63,17 @@ li {
 }
 
 .name {
-  font-size: 40px;
+  font-weight: 900;
+  color: #36414D;
+  font-size: 50px;
   font-family: "Kaushan Script", cursive;
   margin-top: 5px;
   margin-bottom: 20px;
 }
 
 .portfolio {
+    font-weight: 400;
+   color: #36414D;
   font-family: "Kaushan Script", cursive;
   margin-bottom: 20px;
   font-size: 25px;
@@ -81,20 +81,25 @@ li {
 
 .image1 {
   vertical-align: middle;
-  width: 200px;
-  height: 200px;
+  width: 450px;
+  height: 450px;
   border-radius: 3%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .about {
-  width: 70%; /* Set the width to 100% on mobile to create a column layout */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  padding: 20px;
-  margin-top: 20px; /* Add margin-top on mobile for spacing */
-  border-radius: 25px;
+  width: 70%; 
+ padding: 20px;
+  margin-top: 20px;
+  margin-left: 5%; 
+ border-radius: 25px;
+  font-size: 25px;
+  height: 100%;
 }
-
+.cv{
+  border-radius: 3%;
+  background-color: transparent;
+}
 /* Media query for screens with a maximum width of 768px (mobile devices) */
 @media (max-width: 768px) {
   .container-row {
@@ -129,33 +134,23 @@ li {
   font-weight: bold;
   text-align: center;
 }
-.Mobile-app,
-.web-dev,
-.other {
-  font-weight: bold;
+.tech-skills{
+  font-size: 18px;
+  color: gray;
+  margin-top: 3%;
   width: 100%;
   max-width: 350px;
-  padding: 20px;
-  margin-bottom: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, background-color 0.3s, color 0.3s;
-}
-
-.Mobile-app:hover,
-.web-dev:hover,
-.other:hover {
-  transform: translateY(-10px);
-  background-color: var(--clr-accent);
-  color: var(--clr-light);
+   transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 .web-app, .mobile-app, .other-app{
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
    border-radius: 10px;
-    width: 40px;
-    height: 40px;
- 
-   
+    width: 50px;
+    height: 50px;
+    gap: 3rem;
+    margin: 1% 1% 1% 1%;
+
  
 }
 @media (max-width: 768px) {
@@ -163,9 +158,10 @@ li {
     justify-content: space-evenly;
     flex-direction: column;
   }
-  .skills {
-    margin: 5%;
+  .tech-skills {
+    margin-top: 10%;
   }
+  
 }
 .container-row-projects {
   display: flex;
