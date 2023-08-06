@@ -138,7 +138,6 @@ li {
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  background-color: #FFFF;
   transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
@@ -152,9 +151,11 @@ li {
 .web-app, .mobile-app, .other-app{
    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
    border-radius: 10px;
-    width: 75px;
-    height: 75px;
-
+    width: 40px;
+    height: 40px;
+ 
+   
+ 
 }
 @media (max-width: 768px) {
   .container-row-skills {
