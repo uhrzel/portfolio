@@ -48,16 +48,16 @@ li {
 @media (max-width: 768px) {
   .navbar {
     margin-left: 70%;
-    /*    margin-right: auto; */
+   
   }
 }
 
 @media (max-width: 768px) {
   .header-container {
     height: 25%;
+    
   }
 }
-
 .container-row {
   justify-content: space-between;
   display: flex;
@@ -68,6 +68,8 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+
 }
 
 .name {
@@ -75,16 +77,16 @@ li {
   color: #36414D;
   font-size: 50px;
   font-family: "Kaushan Script", cursive;
-  margin-top: 5px;
+  margin-top: 10%;
   margin-bottom: 20px;
 }
 
 .portfolio {
-  font-weight: 400;
+  font-weight: 500;
   color: #36414D;
   font-family: "Kaushan Script", cursive;
-  margin-bottom: 20px;
-  font-size: 25px;
+  margin-bottom: 10px;
+  font-size: 40px;
 }
 
 .image1 {
@@ -119,13 +121,21 @@ li {
     /* Center items vertically on mobile */
   }
 
+
   .profile-name {
     margin-bottom: 20px;
     /* Add margin-bottom on mobile for spacing */
   }
+  .portfolio{
+    text-align: center;
+  position: relative;
+  width: 500px;
+  overflow: hidden;
+  font-size: 30px;
+  }
 
   .name {
-    font-size: 30px;
+    font-size: 50px;
     /* Decrease font size for mobile */
   }
 
@@ -183,8 +193,10 @@ li {
 }
 
 figcaption {
+ 
   font-size: 12px;
   text-align: center;
+  font-weight: 500;
 
 
 }
