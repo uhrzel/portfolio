@@ -6,9 +6,11 @@
   display: flex;
   align-items: center;
 }
+
 .navbar {
   margin: 0% 5% 0 60%;
 }
+
 .nav-link {
   border-radius: 20px;
   transition: box-shadow 0.3s, font-family 0.3s;
@@ -16,27 +18,33 @@
   font-size: 25px;
   font-family: serif;
 }
+
 .nav-link.active {
   border-radius: 20px;
   box-shadow: 0 0 5px #4E4B51;
   font-family: serif;
   font-weight: bold;
 }
+
 .nav-link:hover {
   border-radius: 20px;
   transition: box-shadow 0.3s, font-family 0.3s;
-    box-shadow: 0 0 5px #4E4B51;
+  box-shadow: 0 0 5px #4E4B51;
 }
+
 .navbar-toggler {
   background-color: #bec3cb;
 }
+
 .navbar-nav {
   list-style: none;
   display: flex;
 }
+
 li {
   margin-right: 10px;
 }
+
 @media (max-width: 768px) {
   .navbar {
     margin-left: 70%;
@@ -72,8 +80,8 @@ li {
 }
 
 .portfolio {
-    font-weight: 400;
-   color: #36414D;
+  font-weight: 400;
+  color: #36414D;
   font-family: "Kaushan Script", cursive;
   margin-bottom: 20px;
   font-size: 25px;
@@ -81,44 +89,52 @@ li {
 
 .image1 {
   vertical-align: middle;
-  width: 450px;
-  height: 450px;
+  width: 400px;
+  height: 400px;
   border-radius: 3%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .about {
-  width: 70%; 
- padding: 20px;
+  width: 70%;
+  padding: 20px;
   margin-top: 20px;
-  margin-left: 5%; 
- border-radius: 25px;
+  margin-left: 5%;
+  border-radius: 25px;
   font-size: 25px;
   height: 100%;
 }
-.cv{
+
+.cv {
   border-radius: 3%;
   background-color: transparent;
 }
+
 /* Media query for screens with a maximum width of 768px (mobile devices) */
 @media (max-width: 768px) {
   .container-row {
-    flex-direction: column; /* Change to a column layout on mobile */
-    align-items: center; /* Center items vertically on mobile */
+    flex-direction: column;
+    /* Change to a column layout on mobile */
+    align-items: center;
+    /* Center items vertically on mobile */
   }
 
   .profile-name {
-    margin-bottom: 20px; /* Add margin-bottom on mobile for spacing */
+    margin-bottom: 20px;
+    /* Add margin-bottom on mobile for spacing */
   }
 
   .name {
-    font-size: 30px; /* Decrease font size for mobile */
+    font-size: 30px;
+    /* Decrease font size for mobile */
   }
 
   .image1 {
-    width: 150px; /* Decrease image size for mobile */
+    width: 150px;
+    /* Decrease image size for mobile */
     height: 150px;
   }
+
   .about {
     width: 100%;
   }
@@ -130,39 +146,63 @@ li {
   justify-content: space-evenly;
   align-items: baseline;
 }
+
 .skills {
   font-weight: bold;
   text-align: center;
 }
-.tech-skills{
-  font-size: 18px;
-  color: gray;
-  margin-top: 3%;
-  width: 100%;
-  max-width: 350px;
-  border-radius: 10px;
-   transition: transform 0.3s, background-color 0.3s, color 0.3s;
-}
-.web-app, .mobile-app, .other-app{
-   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-   border-radius: 10px;
-    width: 50px;
-    height: 50px;
-    gap: 3rem;
-    margin: 1% 1% 1% 1%;
 
- 
+.tech-skills {
+  font-size: 15px;
+  margin-top: 3%;
+  width: 70%;
+  max-width: 450px;
+  border-radius: 10px;
 }
+
+.tech-skills p {
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.skill-item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.web-app,
+.mobile-app,
+.other-app {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+}
+
+figcaption {
+  font-size: 12px;
+  text-align: center;
+
+
+}
+
 @media (max-width: 768px) {
   .container-row-skills {
     justify-content: space-evenly;
     flex-direction: column;
   }
+
   .tech-skills {
     margin-top: 10%;
+    width: 100%;
+    max-width: 4500px;
   }
-  
+
 }
+
 .container-row-projects {
   display: flex;
   flex-direction: row;
@@ -179,14 +219,16 @@ li {
   width: 50%;
   padding: 20px;
   margin-bottom: 20px;
-  text-align: center; /* Center the buttons on mobile */
+  text-align: center;
+  /* Center the buttons on mobile */
 }
 
 .project-img {
   border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
   width: 100%;
-  height: auto; /* Automatically adjust height to maintain aspect ratio */
+  height: auto;
+  /* Automatically adjust height to maintain aspect ratio */
 }
 
 button {
@@ -197,14 +239,17 @@ button {
 /* Media query for screens with a maximum width of 768px (mobile devices) */
 @media (max-width: 768px) {
   .container-row-projects {
-    flex-direction: column; /* Change to a column layout on mobile */
+    flex-direction: column;
+    /* Change to a column layout on mobile */
   }
 
   .project-description,
   .container-project-image {
-    width: 100%; /* Make both sections occupy the full width on mobile */
+    width: 100%;
+    /* Make both sections occupy the full width on mobile */
   }
 }
+
 .projects {
   font-weight: bold;
   text-align: center;
@@ -217,17 +262,20 @@ footer {
   align-items: center;
   padding: 30px;
 }
+
 .contact-info {
   color: #000001;
   text-align: center;
   font-weight: bold;
   margin-bottom: 3%;
 }
+
 .social-links {
   margin-bottom: 10px;
   display: flex;
   justify-content: space-evenly;
 }
+
 .icon1,
 .icon2,
 .icon3,
@@ -235,13 +283,16 @@ footer {
 .icon5 {
   fill: white;
 }
+
 .social-links svg {
   width: 40px;
   height: 40px;
 }
+
 hr {
   width: 80%;
 }
+
 .description {
   width: 100%;
   font-family: sans-serif;
