@@ -21,7 +21,7 @@
 
 .nav-link.active {
   border-radius: 20px;
-  box-shadow: 0 0 5px #4E4B51;
+  box-shadow: 0 0 5px #4e4b51;
   font-family: serif;
   font-weight: bold;
 }
@@ -29,7 +29,7 @@
 .nav-link:hover {
   border-radius: 20px;
   transition: box-shadow 0.3s, font-family 0.3s;
-  box-shadow: 0 0 5px #4E4B51;
+  box-shadow: 0 0 5px #4e4b51;
 }
 
 .navbar-toggler {
@@ -48,14 +48,12 @@ li {
 @media (max-width: 768px) {
   .navbar {
     margin-left: 70%;
-   
   }
 }
 
 @media (max-width: 768px) {
   .header-container {
     height: 25%;
-    
   }
 }
 .container-row {
@@ -68,13 +66,11 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-
 }
 
 .name {
   font-weight: 900;
-  color: #36414D;
+  color: #36414d;
   font-size: 50px;
   font-family: "Kaushan Script", cursive;
   margin-top: 10%;
@@ -83,7 +79,7 @@ li {
 
 .portfolio {
   font-weight: 500;
-  color: #36414D;
+  color: #36414d;
   font-family: "Kaushan Script", cursive;
   margin-bottom: 10px;
   font-size: 40px;
@@ -121,17 +117,16 @@ li {
     /* Center items vertically on mobile */
   }
 
-
   .profile-name {
     margin-bottom: 20px;
     /* Add margin-bottom on mobile for spacing */
   }
-  .portfolio{
+  .portfolio {
     text-align: center;
-  position: relative;
-  width: 500px;
-  overflow: hidden;
-  font-size: 30px;
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+    font-size: 30px;
   }
 
   .name {
@@ -179,7 +174,6 @@ li {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .web-app,
@@ -196,8 +190,6 @@ figcaption {
   font-size: 12px;
   text-align: center;
   font-weight: 300;
-
-
 }
 
 @media (max-width: 768px) {
@@ -211,7 +203,6 @@ figcaption {
     width: 100%;
     max-width: 4500px;
   }
-
 }
 
 .container-row-projects {
