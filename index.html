@@ -70,7 +70,7 @@
                     marketing. Coding gives me a wonderful
                     feeling of achievement and joy which I cannot explain in words.
                 </p>
-                <a href="./assets/resume/resume.pdf" download><button type="button" class="btn btn-secondary">Download
+                <a href="./assets/resume/resume.pdf" download><button type="button" class="btn-cv">Download
                         CV </button> </a>
                 <div class="tech-skills">
                     <p><strong>Tech stack:</strong></p>
@@ -159,10 +159,10 @@
                 <img src="./assets/img/project-image.PNG" alt="" class="project-img" width="100%" height="400px">
                 <br>
                 <br>
-                <a href="http://medical-appointment-system.rf.gd/login.php"><button class="btn btn-secondary view">view
+                <a href="http://medical-appointment-system.rf.gd/login.php"><button class="btn-view">view
                         live</button></a>
                 <a href="https://github.com/sphinxnut/medical_appointment_system"> <button
-                        class="btn btn-secondary sc">source code</button></a>
+                        class="btn-sc">source code</button></a>
                 <br>
             </div>
         </div>
@@ -178,8 +178,8 @@
                 <img src="./assets/img/tama.png" alt="" class="project-img" width="100%" height="400px">
                 <br>
                 <br>
-                <a href=""><button class="btn btn-secondary view">view live</button></a>
-                <a href="https://github.com/sphinxnut/TAMA"> <button class="btn btn-secondary sc">source
+                <a href=""><button class="btn-view">view live</button></a>
+                <a href="https://github.com/sphinxnut/TAMA"> <button class="btn-sc">source
                         code</button></a>
                 <br>
             </div>
@@ -198,9 +198,9 @@
                 <img src="./assets/img/evacuation.png" alt="" class="project-img" width="100%" height="400px">
                 <br>
                 <br>
-                <a href="https://evacuation-system.vercel.app/index.html"><button class="btn btn-secondary view">view
+                <a href="https://evacuation-system.vercel.app/index.html"><button class="btn-view">view
                         live</button></a>
-                <a href="https://github.com/sphinxnut/evacuation-system"> <button class="btn btn-secondary sc">source
+                <a href="https://github.com/sphinxnut/evacuation-system"> <button class="btn-sc">source
                         code</button></a>
                 <br>
             </div>
@@ -220,10 +220,10 @@
                 <img src="./assets/img/tourist.png" alt="" class="project-img" width="100%" height="400px">
                 <br>
                 <br>
-                <a href="https://tourist-view-philippines.vercel.app/"><button class="btn btn-secondary view">view
+                <a href="https://tourist-view-philippines.vercel.app/"><button class="btn-view">view
                         live</button></a>
                 <a href="https://github.com/sphinxnut/tourist-view-philippines"> <button
-                        class="btn btn-secondary sc">source code</button></a>
+                        class="btn-sc">source code</button></a>
                 <br>
             </div>
         </div>
@@ -239,9 +239,9 @@
                 <img src="./assets/img/mailchimp-campaign.png" alt="" class="project-img" width="100%" height="400px">
                 <br>
                 <br>
-                <a href="https://mailchi.mp/5003918770d7/tiange-ni-pia"><button class="btn btn-secondary view">view
+                <a href="https://mailchi.mp/5003918770d7/tiange-ni-pia"><button class="btn-view">view
                         live</button></a>
-                <a href=""> <button class="btn btn-secondary sc">source code</button></a>
+                <a href=""> <button class="btn-sc">source code</button></a>
                 <br>
             </div>
         </div>
@@ -257,9 +257,9 @@
                 <br>
                 <br>
                 <a href="https://www.klaviyo.com/campaign/01H5KQ70DSCQ2FZZ54CMKRETSX/web-view"><button
-                        class="btn btn-secondary view">view
+                        class="btn-view">view
                         live</button></a>
-                <a href=""> <button class="btn btn-secondary sc">source code</button></a>
+                <a href=""> <button class="btn-sc">source code</button></a>
                 <br>
             </div>
         </div>
@@ -305,8 +305,20 @@
             <p><strong>Portfolio:</strong>Arzel John Zolina | 2023</p>
         </div>
     </footer>
+<div class="cursor">
+
+</div>
+<div class="cursor2">
+
+</div>
+</body>
     <script src="index.js"></script>
     <script>
+            var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
         ScrollReveal({
             reset: false,
             distance: '60px',
@@ -326,7 +338,5 @@
         ScrollReveal().reveal('.social-links', { delay: 500, origin: 'bottom', interval: 100 });
 
     </script>
-
-</body>
 
 </html>
